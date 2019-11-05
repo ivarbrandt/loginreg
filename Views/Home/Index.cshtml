@@ -1,7 +1,7 @@
 ﻿@model IndexViewModel
 
-<div class="row">
-  <div class="col-5">
+<div class="row mt-3 justify-content-center">
+  <div class="col-sm-3 mr-5">
     <h1>Register</h1>
     <br />
     <form
@@ -10,33 +10,45 @@
       class="form-group"
       method="post"
     >
-      <label asp-for="NewUser.FirstName"></label>
-      <span asp-validation-for="NewUser.FirstName"></span>
-      <input class="form-control" asp-for="NewUser.FirstName" />
-      <br />
-      <label asp-for="NewUser.LastName"></label>
-      <span asp-validation-for="NewUser.LastName"></span>
-      <input class="form-control" asp-for="NewUser.LastName" />
-      <br />
-      <label asp-for="NewUser.Email"></label>
-      <span asp-validation-for="NewUser.Email"></span>
-      <input class="form-control" asp-for="NewUser.Email" />
-      <br />
-      <label asp-for="NewUser.Password"></label>
-      <span asp-validation-for="NewUser.Password"></span>
-      <input class="form-control" asp-for="NewUser.Password" />
-      <br />
-      <label asp-for="NewUser.ConfirmPassword"></label>
-      <span asp-validation-for="NewUser.ConfirmPassword"></span>
-      <input class="form-control" asp-for="NewUser.ConfirmPassword" />
+      <div class="row my-3">
+        <label asp-for="NewUser.FirstName"></label>
+        <span asp-validation-for="NewUser.FirstName"></span>
+        <input class="form-control" asp-for="NewUser.FirstName" />
+      </div>
 
-      <button class="btn btn-primary" type="submit" style="margin-top: 17px">
-        Sign up
-      </button>
+      <div class="row my-3">
+        <label asp-for="NewUser.LastName"></label>
+        <span asp-validation-for="NewUser.LastName"></span>
+        <input class="form-control" asp-for="NewUser.LastName" />
+      </div>
+
+      <div class="row my-3">
+        <label asp-for="NewUser.Email"></label>
+        <span asp-validation-for="NewUser.Email"></span>
+        <input class="form-control" asp-for="NewUser.Email" />
+      </div>
+
+      <div class="row my-3">
+        <label asp-for="NewUser.Password"></label>
+        <span asp-validation-for="NewUser.Password"></span>
+        <input class="form-control" asp-for="NewUser.Password" />
+      </div>
+
+      <div class="row my-3">
+        <label asp-for="NewUser.ConfirmPassword"></label>
+        <span asp-validation-for="NewUser.ConfirmPassword"></span>
+        <input class="form-control" asp-for="NewUser.ConfirmPassword" />
+      </div>
+
+      <div class="row my-3">
+        <button class="btn btn-primary" type="submit" style="margin-top: 17px">
+          Sign up
+        </button>
+      </div>
     </form>
   </div>
 
-  <div class="col-5">
+  <div class="col-sm-3">
     <h1>Login</h1>
     <br />
     <form
@@ -45,17 +57,23 @@
       class="form-group"
       method="post"
     >
-      <label asp-for="LoggedUser.Email"></label>
-      <span asp-validation-for="LoggedUser.Email"></span>
-      <input class="form-control" asp-for="LoggedUser.Email" />
-      <br />
-      <label asp-for="LoggedUser.Password"></label>
-      <span asp-validation-for="LoggedUser.Password"></span>
-      <input class="form-control" asp-for="LoggedUser.Password" />
+      <div class="row my-3">
+        <label asp-for="LoggedUser.Email"></label>
+        <span asp-validation-for="LoggedUser.Email"></span>
+        <input class="form-control" asp-for="LoggedUser.Email" />
+      </div>
 
-      <button class="btn btn-primary" type="submit" style="margin-top: 17px">
-        Login
-      </button>
+      <div class="row my-3">
+        <label asp-for="LoggedUser.Password"></label>
+        <span asp-validation-for="LoggedUser.Password"></span>
+        <input class="form-control" asp-for="LoggedUser.Password" />
+      </div>
+
+      <div class="row my-3">
+        <button class="btn btn-primary" type="submit" style="margin-top: 17px">
+          Login
+        </button>
+      </div>
     </form>
   </div>
 </div>
