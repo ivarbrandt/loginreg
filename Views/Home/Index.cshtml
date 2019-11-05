@@ -1,0 +1,61 @@
+﻿@model IndexViewModel
+
+<div class="row">
+  <div class="col-5">
+    <h1>Register</h1>
+    <br />
+    <form
+      asp-action="Create"
+      asp-controller="Home"
+      class="form-group"
+      method="post"
+    >
+      <label asp-for="NewUser.FirstName"></label>
+      <span asp-validation-for="NewUser.FirstName"></span>
+      <input class="form-control" asp-for="NewUser.FirstName" />
+      <br />
+      <label asp-for="NewUser.LastName"></label>
+      <span asp-validation-for="NewUser.LastName"></span>
+      <input class="form-control" asp-for="NewUser.LastName" />
+      <br />
+      <label asp-for="NewUser.Email"></label>
+      <span asp-validation-for="NewUser.Email"></span>
+      <input class="form-control" asp-for="NewUser.Email" />
+      <br />
+      <label asp-for="NewUser.Password"></label>
+      <span asp-validation-for="NewUser.Password"></span>
+      <input class="form-control" asp-for="NewUser.Password" />
+      <br />
+      <label asp-for="NewUser.ConfirmPassword"></label>
+      <span asp-validation-for="NewUser.ConfirmPassword"></span>
+      <input class="form-control" asp-for="NewUser.ConfirmPassword" />
+
+      <button class="btn btn-primary" type="submit" style="margin-top: 17px">
+        Sign up
+      </button>
+    </form>
+  </div>
+
+  <div class="col-5">
+    <h1>Login</h1>
+    <br />
+    <form
+      asp-action="Login"
+      asp-controller="Home"
+      class="form-group"
+      method="post"
+    >
+      <label asp-for="LoggedUser.Email"></label>
+      <span asp-validation-for="LoggedUser.Email"></span>
+      <input class="form-control" asp-for="LoggedUser.Email" />
+      <br />
+      <label asp-for="LoggedUser.Password"></label>
+      <span asp-validation-for="LoggedUser.Password"></span>
+      <input class="form-control" asp-for="LoggedUser.Password" />
+
+      <button class="btn btn-primary" type="submit" style="margin-top: 17px">
+        Login
+      </button>
+    </form>
+  </div>
+</div>
